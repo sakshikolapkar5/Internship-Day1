@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width",initial-scale=1.0>
+    <title>Flexbox Concept</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: wrap;
+            align-content: end;
+            align-content: stretch;
+            background-color: lightseagreen;
+
+        }
+        .container div{
+            margin: 20px;
+            padding: 30px;
+            font-size: 40px;
+            background-color: red;
+        }
+        h2{
+            margin: 20px;
+            padding: 40px;
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <div>style="order:3">Item1</div>
+    <div>style="order:2"Item2</div>
+    <div>style="order:4"Item3</div>
+    <div>style="order:5"Item4</div>
+    <div>style="order:1"Item5</div>
+
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <h2 style="align-items: start; background-color: grey; color: white;flexbox alignment</h2>
+    </div>
+</body>
+</html>
